@@ -480,7 +480,7 @@ section {
 .hero-animated {
   width: 100%;
   /* min-height: 87vh; */
-  height: 100vh;
+  height: 90vh;
   background: url("../img/hero-carousel/Desktop.jpg") top center;
   background-size: cover;
   position: relative;
@@ -633,15 +633,21 @@ section {
 @media (max-width: 1024px) {
 
   .hero-animated {
-    height: 61vh!important;
+    height: 61vh;
     top: 3rem;
   }
 }
 
 @media only screen and (max-width: 600px){
   .hero-animated {
-    background: url("../img/hero-carousel/Mob.jpg") top center!important;
-    background-repeat: no-repeat;
+    /* background: url("../img/hero-carousel/Mob.jpg") top center!important;
+    background-repeat: no-repeat; */
+
+    width: 100%;
+    height: 90vh!important;
+    background: url(../img/hero-carousel/Mob.jpg) top center;
+    background-size: cover;
+    position: relative;
   }
 }
 
