@@ -479,11 +479,12 @@ section {
 --------------------------------------------------------------*/
 .hero-animated {
   width: 100%;
-  min-height: 50vh;
-  background: url("../img/hero-bg.png") center center;
+  /* min-height: 87vh; */
+  height: 100vh;
+  background: url("../img/hero-carousel/Desktop.jpg") top center;
   background-size: cover;
   position: relative;
-  padding: 120px 0 60px;
+  /* padding: 120px 0 60px; */
 }
 .hero-animated h2 {
   margin: 0 0 10px 0;
@@ -617,10 +618,33 @@ section {
   animation: fadeInDown 1s both 0.2s;
 }
 @media (max-width: 768px) {
+
+  .hero-animated {
+    height: 60vh!important;
+    width: 100%;
+    top: 3rem;
+  }
+
   .hero h2 {
     font-size: 30px;
   }
 }
+
+@media (max-width: 1024px) {
+
+  .hero-animated {
+    height: 61vh!important;
+    top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .hero-animated {
+    background: url("../img/hero-carousel/Mob.jpg") top center!important;
+    background-repeat: no-repeat;
+  }
+}
+
 .hero p {
   color: var(--color-secondary-light);
   -webkit-animation: fadeInDown 1s both 0.4s;
